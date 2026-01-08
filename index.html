@@ -65,8 +65,8 @@
   <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react/": "https://esm.sh/react@^19.2.3/"
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
   }
 }
 </script>
@@ -78,9 +78,7 @@
       
       <!-- HEADER SECTION -->
       <header class="mb-16 text-center md:text-left border-b border-gray-200 pb-12">
-        <div class="inline-block px-3 py-1 bg-gray-100 text-tecoBlue text-xs font-bold tracking-widest uppercase rounded mb-4">
-          Giải pháp công nghệ
-        </div>
+        <!-- Badge removed as per request -->
         <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
           Giải Pháp Giám Sát Liên Tục <span class="text-tecoOrange">Trường Điện Từ (EMF)</span> Trong Khu Vực
         </h1>
@@ -113,32 +111,34 @@
         </div>
 
         <div class="mt-8 grid md:grid-cols-2 gap-8 items-center">
-          <!-- Hero Image -->
+          <!-- Hero Image: High priority, no lazy load, optimized -->
           <img 
-            src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image001.png" 
+            src="https://images.weserv.nl/?url=https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image001.png&w=1000&output=webp&q=85" 
             alt="MonitEM Device on Pole" 
+            decoding="async"
             class="rounded-lg shadow-lg w-full h-auto object-cover max-h-[400px] hover:shadow-xl transition-shadow duration-300" 
           />
           
           <!-- Key Benefits -->
           <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-tecoOrange shadow-sm">
-            <h3 class="font-bold text-gray-800 mb-4 text-lg">Tại sao chọn MonitEM?</h3>
+            <!-- Brand Voice Adjustment: More Technical/Professional Header -->
+            <h3 class="font-bold text-gray-800 mb-4 text-lg">Ưu Điểm Kỹ Thuật & Vận Hành</h3>
             <ul class="space-y-3">
               <li class="flex items-start">
                 <svg class="w-5 h-5 text-tecoOrange mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">Giám sát <strong>24/7/365</strong> không gián đoạn.</span>
+                <span class="text-gray-700">Giám sát <strong>24/7/365</strong> liên tục, không gián đoạn.</span>
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 text-tecoOrange mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">Đạt chuẩn bảo vệ <strong>IP66</strong>, chịu được thời tiết khắc nghiệt.</span>
+                <span class="text-gray-700">Đạt chuẩn bảo vệ <strong>IP66</strong>, vận hành bền bỉ trong điều kiện thời tiết khắc nghiệt.</span>
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 text-tecoOrange mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">Tự chủ năng lượng với tấm pin mặt trời.</span>
+                <span class="text-gray-700">Tự chủ năng lượng với hệ thống pin mặt trời tích hợp.</span>
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 text-tecoOrange mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">Dữ liệu minh bạch, dễ dàng truy xuất qua Web.</span>
+                <span class="text-gray-700">Dữ liệu minh bạch, dễ dàng truy xuất và quản lý qua nền tảng Web.</span>
               </li>
             </ul>
           </div>
@@ -159,8 +159,10 @@
           
           <div class="bg-white p-4 border border-gray-200 rounded-xl shadow-sm mb-8">
             <img 
-              src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image004.png" 
+              src="https://images.weserv.nl/?url=https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image004.png&w=1000&output=webp&q=85" 
               alt="Sơ đồ nguyên lý hoạt động MonitEM" 
+              loading="lazy"
+              decoding="async"
               class="w-full h-auto rounded" 
             />
             <p class="text-center text-sm text-gray-500 mt-2 italic">Hình 1: Mô hình tổng thể từ nguồn phát đến trung tâm giám sát</p>
@@ -204,14 +206,14 @@
                   <div class="w-12 h-12 rounded-full bg-tecoBlue text-white flex items-center justify-center font-bold mr-4 shrink-0 shadow-md">A</div>
                   <div>
                       <h4 class="font-bold text-gray-800 text-lg">Tuân thủ ITU-K.83</h4>
-                      <p class="text-sm text-gray-600 mt-1">Đáp ứng "tiêu chuẩn vàng" cho việc giám sát mức điện từ trường liên tục, đảm bảo độ tin cậy của dữ liệu đo.</p>
+                      <p class="text-sm text-gray-600 mt-1">Đáp ứng "tiêu chuẩn vàng" cho việc giám sát mức điện từ trường liên tục, đảm bảo độ tin cậy tuyệt đối của dữ liệu đo.</p>
                   </div>
               </div>
               <div class="flex items-start">
                   <div class="w-12 h-12 rounded-full bg-tecoOrange text-white flex items-center justify-center font-bold mr-4 shrink-0 shadow-md">B</div>
                   <div>
                       <h4 class="font-bold text-gray-800 text-lg">Cảnh báo thời gian thực</h4>
-                      <p class="text-sm text-gray-600 mt-1">Hệ thống gửi thông báo tức thì qua Email/SMS khi chỉ số vượt ngưỡng an toàn, pin yếu, hoặc có lỗi phần cứng, giúp xử lý sự cố kịp thời.</p>
+                      <p class="text-sm text-gray-600 mt-1">Hệ thống gửi thông báo tức thì qua Email/SMS khi chỉ số vượt ngưỡng an toàn, pin yếu, hoặc có lỗi phần cứng, hỗ trợ xử lý sự cố kịp thời.</p>
                   </div>
               </div>
               <div class="flex items-start">
@@ -226,11 +228,11 @@
           
           <div class="flex flex-col gap-6">
              <figure class="rounded-lg shadow-md border border-gray-100 overflow-hidden bg-gray-50">
-               <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image008.jpg" alt="Giao diện phần mềm quản lý" class="w-full h-auto" />
+               <img src="https://images.weserv.nl/?url=https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image008.jpg&w=600&output=webp&q=85" alt="Giao diện phần mềm quản lý" loading="lazy" decoding="async" class="w-full h-auto" />
                <figcaption class="p-2 text-center text-xs text-gray-500">Giao diện trung tâm điều khiển trực quan</figcaption>
              </figure>
              <figure class="rounded-lg shadow-md border border-gray-100 overflow-hidden bg-gray-50">
-               <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image006.jpg" alt="Các tính năng phần cứng" class="w-full h-auto" />
+               <img src="https://images.weserv.nl/?url=https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image006.jpg&w=600&output=webp&q=85" alt="Các tính năng phần cứng" loading="lazy" decoding="async" class="w-full h-auto" />
                <figcaption class="p-2 text-center text-xs text-gray-500">Thiết kế phần cứng tối ưu cho môi trường khắc nghiệt</figcaption>
              </figure>
           </div>
@@ -288,7 +290,7 @@
                       </table>
                     </div>
                  </div>
-                 <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image007.jpg" alt="High Frequency Probes" class="w-32 object-contain mx-auto md:mx-0" />
+                 <img src="https://images.weserv.nl/?url=https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image007.jpg&w=400&output=webp&q=85" alt="High Frequency Probes" loading="lazy" decoding="async" class="w-32 object-contain mx-auto md:mx-0" />
               </div>
             </div>
           </details>
@@ -362,7 +364,7 @@
           <!-- Case 1 -->
           <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg transition-shadow overflow-hidden flex flex-col group">
             <div class="h-48 overflow-hidden relative">
-                <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image013.jpg" alt="FIFA World Cup 2022" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                <img src="https://images.weserv.nl/?url=https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image013.jpg&w=600&output=webp&q=85" alt="FIFA World Cup 2022" loading="lazy" decoding="async" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
                 <span class="absolute bottom-0 left-0 bg-tecoBlue text-white text-xs px-3 py-1 font-bold">Qatar</span>
             </div>
             <div class="p-5 flex-1 flex flex-col">
@@ -382,7 +384,7 @@
           <!-- Case 2 -->
           <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg transition-shadow overflow-hidden flex flex-col group">
             <div class="h-48 overflow-hidden relative">
-                <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image017.jpg" alt="Olympics & World Cup" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                <img src="https://images.weserv.nl/?url=https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image017.jpg&w=600&output=webp&q=85" alt="Olympics & World Cup" loading="lazy" decoding="async" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
                 <span class="absolute bottom-0 left-0 bg-tecoBlue text-white text-xs px-3 py-1 font-bold">Brazil</span>
             </div>
             <div class="p-5 flex-1 flex flex-col">
@@ -402,7 +404,7 @@
           <!-- Case 3 -->
           <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg transition-shadow overflow-hidden flex flex-col group">
             <div class="h-48 overflow-hidden relative">
-                <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image012.jpg" alt="Tunisia 5G" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                <img src="https://images.weserv.nl/?url=https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image012.jpg&w=600&output=webp&q=85" alt="Tunisia 5G" loading="lazy" decoding="async" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
                 <span class="absolute bottom-0 left-0 bg-tecoBlue text-white text-xs px-3 py-1 font-bold">Tunisia</span>
             </div>
             <div class="p-5 flex-1 flex flex-col">
@@ -421,7 +423,7 @@
            <!-- Case 4 -->
            <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg transition-shadow overflow-hidden flex flex-col group">
             <div class="h-48 overflow-hidden relative">
-                <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image015.jpg" alt="Serbia RATEL" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                <img src="https://images.weserv.nl/?url=https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image015.jpg&w=600&output=webp&q=85" alt="Serbia RATEL" loading="lazy" decoding="async" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
                 <span class="absolute bottom-0 left-0 bg-tecoBlue text-white text-xs px-3 py-1 font-bold">Serbia</span>
             </div>
             <div class="p-5 flex-1 flex flex-col">
@@ -440,17 +442,18 @@
         </div>
         
         <div class="mt-8 flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
-          <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image021.png" alt="Colombia Map" class="h-32 w-auto rounded border border-gray-200" />
-          <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image023.jpg" alt="Turkey Map" class="h-32 w-auto rounded border border-gray-200" />
-          <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image005.jpg" alt="MonitEM Unit" class="h-32 w-auto rounded border border-gray-200" />
+          <img src="https://images.weserv.nl/?url=https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image021.png&w=400&output=webp&q=85" alt="Colombia Map" loading="lazy" decoding="async" class="h-32 w-auto rounded border border-gray-200" />
+          <img src="https://images.weserv.nl/?url=https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image023.jpg&w=400&output=webp&q=85" alt="Turkey Map" loading="lazy" decoding="async" class="h-32 w-auto rounded border border-gray-200" />
+          <img src="https://images.weserv.nl/?url=https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image005.jpg&w=400&output=webp&q=85" alt="MonitEM Unit" loading="lazy" decoding="async" class="h-32 w-auto rounded border border-gray-200" />
         </div>
       </section>
 
       <!-- CTA FOOTER -->
       <div class="bg-gradient-to-br from-tecoBlue to-blue-800 rounded-xl p-8 text-white text-center shadow-xl transform transition-transform hover:-translate-y-1 duration-300">
+        <!-- Brand Voice Adjustment: Partner-Oriented & Authoritative -->
         <h3 class="text-2xl font-bold mb-4">Tư Vấn Giải Pháp Giám Sát EMF</h3>
         <p class="mb-8 text-blue-100 max-w-2xl mx-auto">
-          TECOTEC Group cung cấp dịch vụ trọn gói từ khảo sát, lắp đặt đến bảo trì hệ thống Wavecontrol MonitEM. Liên hệ ngay để nhận báo giá chi tiết.
+          TECOTEC Group đồng hành cùng Quý đối tác từ khâu khảo sát, thiết kế hệ thống đến vận hành và bảo trì trạm quan trắc MonitEM. Kết nối với chuyên gia của chúng tôi để xây dựng giải pháp phù hợp nhất.
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
            <a href="tel:+842437549777" class="px-6 py-3 bg-tecoOrange hover:bg-orange-600 text-white font-bold rounded shadow transition-colors border border-transparent">

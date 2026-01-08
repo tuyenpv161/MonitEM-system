@@ -13,7 +13,7 @@ const SectionHeader = ({ title, subtitle }: { title: string; subtitle?: string }
   </div>
 );
 
-const CheckListItem = ({ children }: { children: React.ReactNode }) => (
+const CheckListItem = ({ children }: { children?: React.ReactNode }) => (
   <li className="flex items-start">
     <svg className="w-5 h-5 text-tecoOrange mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -31,7 +31,7 @@ const SpecAccordionItem = ({
   title: string; 
   isOpen: boolean; 
   onClick: () => void; 
-  children: React.ReactNode 
+  children?: React.ReactNode 
 }) => (
   <div className="border border-gray-200 rounded-lg mb-4 overflow-hidden">
     <button 

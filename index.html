@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giải Pháp Giám Sát EMF MonitEM - TECOTEC Group</title>
+    <meta name="description" content="Giải pháp giám sát liên tục trường điện từ MonitEM - Wavecontrol. Phân phối bởi TECOTEC Group.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -17,6 +18,15 @@
             },
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
             }
           }
         }
@@ -28,6 +38,13 @@
         font-family: 'Inter', sans-serif;
         background-color: #ffffff;
       }
+      /* Remove default details marker */
+      details > summary {
+        list-style: none;
+      }
+      details > summary::-webkit-details-marker {
+        display: none;
+      }
       .scroll-mt-24 {
         scroll-margin-top: 6rem;
       }
@@ -35,14 +52,433 @@
   <script type="importmap">
 {
   "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+    "react/": "https://esm.sh/react@^19.2.3/"
   }
 }
 </script>
 </head>
-  <body>
-    <div id="root"></div>
+  <body class="bg-white text-slate-800 font-sans leading-relaxed selection:bg-tecoOrange selection:text-white">
+    
+    <!-- Main Article Container -->
+    <article class="max-w-4xl mx-auto px-4 py-12 md:py-20">
+      
+      <!-- HEADER SECTION -->
+      <header class="mb-16 text-center md:text-left border-b border-gray-200 pb-12">
+        <div class="inline-block px-3 py-1 bg-gray-100 text-tecoBlue text-xs font-bold tracking-widest uppercase rounded mb-4">
+          Giải pháp công nghệ
+        </div>
+        <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+          Giải Pháp Giám Sát Liên Tục <span class="text-tecoOrange">Trường Điện Từ (EMF)</span> Trong Khu Vực
+        </h1>
+        <p class="text-xl md:text-2xl text-tecoBlue font-medium mb-8">
+          Hệ thống MonitEM – Hãng WAVECONTROL
+        </p>
+        
+        <!-- Intro Quote Box -->
+        <div class="flex flex-col md:flex-row gap-6 items-center bg-blue-50 p-6 rounded-xl border border-blue-100">
+          <p class="text-gray-700 italic flex-1 text-center md:text-left">
+            "Giải pháp đảm bảo tuân thủ tiêu chuẩn ITU-K.83, vận hành bền bỉ 24/7, mang lại sự an tâm tuyệt đối cho cộng đồng về an toàn bức xạ điện từ."
+          </p>
+          <div class="h-12 w-[1px] bg-blue-200 hidden md:block"></div>
+          <div class="flex items-center gap-2 flex-col md:flex-row">
+             <span class="text-sm font-bold text-gray-500 uppercase">Phân phối bởi</span>
+             <span class="text-lg font-bold text-tecoOrange">TECOTEC Group</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- INTRODUCTION SECTION -->
+      <section class="mb-16">
+        <div class="text-gray-600 text-lg leading-relaxed mb-8">
+          <p class="mb-6">
+            Sự phát triển bùng nổ của các mạng viễn thông, đặc biệt là <strong>5G</strong>, cùng với mạng lưới điện cao thế ngày càng dày đặc đã dấy lên mối quan tâm lớn từ cộng đồng về ảnh hưởng của trường điện từ (EMF). Để giải quyết bài toán này, <strong>WAVECONTROL</strong> – đơn vị tiên phong trong lĩnh vực đo lường an toàn bức xạ (thành lập năm 1997) – đã phát triển hệ thống <strong>MonitEM</strong>.
+          </p>
+          <p>
+            Đây là giải pháp giám sát liên tục, cho phép các cơ quan quản lý và nhà khai thác mạng viễn thông kiểm soát mức độ phơi nhiễm EMF theo thời gian thực, đảm bảo tuân thủ các quy chuẩn quốc tế như <em>ICNIRP, FCC hay Safety Code 6</em>.
+          </p>
+        </div>
+
+        <div class="mt-8 grid md:grid-cols-2 gap-8 items-center">
+          <!-- Hero Image -->
+          <img 
+            src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image001.png" 
+            alt="MonitEM Device on Pole" 
+            class="rounded-lg shadow-lg w-full h-auto object-cover max-h-[400px] hover:shadow-xl transition-shadow duration-300" 
+          />
+          
+          <!-- Key Benefits -->
+          <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-tecoOrange shadow-sm">
+            <h3 class="font-bold text-gray-800 mb-4 text-lg">Tại sao chọn MonitEM?</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-tecoOrange mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700">Giám sát <strong>24/7/365</strong> không gián đoạn.</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-tecoOrange mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700">Đạt chuẩn bảo vệ <strong>IP66</strong>, chịu được thời tiết khắc nghiệt.</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-tecoOrange mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700">Tự chủ năng lượng với tấm pin mặt trời.</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-tecoOrange mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700">Dữ liệu minh bạch, dễ dàng truy xuất qua Web.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SYSTEM OVERVIEW SECTION -->
+      <section class="mb-16">
+        <div class="mb-8 border-l-4 border-tecoOrange pl-4">
+          <h2 class="text-2xl md:text-3xl font-bold text-tecoBlue uppercase tracking-wide">Tổng Quan Hệ Thống</h2>
+          <p class="text-gray-500 mt-1 font-medium">Cấu trúc vận hành & Nguyên lý hoạt động</p>
+        </div>
+        
+        <div class="mb-8">
+          <p class="text-gray-600 mb-6">
+            Hệ thống MonitEM được thiết kế để lắp đặt cố định tại các khu vực nhạy cảm (trường học, bệnh viện, khu dân cư) hoặc gần các trạm phát sóng. Hệ thống bao gồm 3 thành phần chính hoạt động đồng bộ:
+          </p>
+          
+          <div class="bg-white p-4 border border-gray-200 rounded-xl shadow-sm mb-8">
+            <img 
+              src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image004.png" 
+              alt="Sơ đồ nguyên lý hoạt động MonitEM" 
+              class="w-full h-auto rounded" 
+            />
+            <p class="text-center text-sm text-gray-500 mt-2 italic">Hình 1: Mô hình tổng thể từ nguồn phát đến trung tâm giám sát</p>
+          </div>
+          
+          <!-- Process Steps -->
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-6 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
+              <div class="text-4xl font-bold text-tecoBlue mb-3">01</div>
+              <h4 class="font-bold text-gray-800 text-lg mb-2">Thu Thập</h4>
+              <p class="text-gray-600">Trạm MonitEM đo cường độ trường điện từ (sử dụng đầu đo chuyên dụng), lưu trữ dữ liệu nội bộ và ghi nhận toạ độ GPS chính xác.</p>
+            </div>
+            <div class="p-6 bg-orange-50 rounded-lg hover:bg-orange-100 transition-colors">
+              <div class="text-4xl font-bold text-tecoOrange mb-3">02</div>
+              <h4 class="font-bold text-gray-800 text-lg mb-2">Truyền Dẫn</h4>
+              <p class="text-gray-600">Dữ liệu được mã hóa và gửi an toàn qua mạng di động (Modem 3G/4G/GPRS) về trung tâm điều khiển theo chu kỳ cài đặt.</p>
+            </div>
+            <div class="p-6 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors">
+              <div class="text-4xl font-bold text-gray-600 mb-3">03</div>
+              <h4 class="font-bold text-gray-800 text-lg mb-2">Phân Tích</h4>
+              <p class="text-gray-600">Phần mềm quản lý trung tâm (Web Server) tiếp nhận, xử lý dữ liệu, hiển thị cảnh báo và tự động xuất bản báo cáo.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES & SOFTWARE SECTION -->
+      <section class="mb-16">
+        <div class="mb-8 border-l-4 border-tecoOrange pl-4">
+          <h2 class="text-2xl md:text-3xl font-bold text-tecoBlue uppercase tracking-wide">Tính Năng & Phần Mềm</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-10">
+          <div>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Điểm mạnh của MonitEM nằm ở sự linh hoạt và khả năng quản lý tập trung. Phần mềm điều khiển cho phép người quản trị thiết lập các ngưỡng báo động, tần suất đo và tự động so sánh với các quy chuẩn quốc tế.
+            </p>
+            
+            <div class="space-y-6">
+              <div class="flex items-start">
+                  <div class="w-12 h-12 rounded-full bg-tecoBlue text-white flex items-center justify-center font-bold mr-4 shrink-0 shadow-md">A</div>
+                  <div>
+                      <h4 class="font-bold text-gray-800 text-lg">Tuân thủ ITU-K.83</h4>
+                      <p class="text-sm text-gray-600 mt-1">Đáp ứng "tiêu chuẩn vàng" cho việc giám sát mức điện từ trường liên tục, đảm bảo độ tin cậy của dữ liệu đo.</p>
+                  </div>
+              </div>
+              <div class="flex items-start">
+                  <div class="w-12 h-12 rounded-full bg-tecoOrange text-white flex items-center justify-center font-bold mr-4 shrink-0 shadow-md">B</div>
+                  <div>
+                      <h4 class="font-bold text-gray-800 text-lg">Cảnh báo thời gian thực</h4>
+                      <p class="text-sm text-gray-600 mt-1">Hệ thống gửi thông báo tức thì qua Email/SMS khi chỉ số vượt ngưỡng an toàn, pin yếu, hoặc có lỗi phần cứng, giúp xử lý sự cố kịp thời.</p>
+                  </div>
+              </div>
+              <div class="flex items-start">
+                  <div class="w-12 h-12 rounded-full bg-gray-700 text-white flex items-center justify-center font-bold mr-4 shrink-0 shadow-md">C</div>
+                  <div>
+                      <h4 class="font-bold text-gray-800 text-lg">Giao tiếp công cộng</h4>
+                      <p class="text-sm text-gray-600 mt-1">Module tùy chọn cho phép tạo trang Web công khai dễ hiểu, giúp người dân theo dõi mức EMF tại khu vực sinh sống, tăng cường sự minh bạch.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex flex-col gap-6">
+             <figure class="rounded-lg shadow-md border border-gray-100 overflow-hidden bg-gray-50">
+               <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image008.jpg" alt="Giao diện phần mềm quản lý" class="w-full h-auto" />
+               <figcaption class="p-2 text-center text-xs text-gray-500">Giao diện trung tâm điều khiển trực quan</figcaption>
+             </figure>
+             <figure class="rounded-lg shadow-md border border-gray-100 overflow-hidden bg-gray-50">
+               <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image006.jpg" alt="Các tính năng phần cứng" class="w-full h-auto" />
+               <figcaption class="p-2 text-center text-xs text-gray-500">Thiết kế phần cứng tối ưu cho môi trường khắc nghiệt</figcaption>
+             </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECH SPECS SECTION (Accordion) -->
+      <section class="mb-16">
+        <div class="mb-8 border-l-4 border-tecoOrange pl-4">
+          <h2 class="text-2xl md:text-3xl font-bold text-tecoBlue uppercase tracking-wide">Thông Số Kỹ Thuật</h2>
+          <p class="text-gray-500 mt-1 font-medium">Lựa chọn đầu đo (Probes) phù hợp</p>
+        </div>
+        
+        <div class="bg-white">
+          <p class="mb-6 text-gray-600">Hệ thống MonitEM hỗ trợ thay đổi đầu đo linh hoạt tuỳ theo mục đích giám sát: từ tần số thấp (đường dây tải điện) đến tần số cao (viễn thông, radar).</p>
+          
+          <!-- Accordion Item 1 -->
+          <details open class="group border border-gray-200 rounded-lg mb-4 overflow-hidden">
+            <summary class="w-full flex justify-between items-center p-4 text-left cursor-pointer bg-gray-50 hover:bg-gray-100 group-open:bg-tecoBlue group-open:text-white transition-colors">
+              <span class="font-bold text-lg">1. Đầu đo Tần số cao (High Frequency)</span>
+              <span class="transform transition-transform group-open:rotate-180">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </span>
+            </summary>
+            <div class="p-6 bg-white animate-fade-in">
+              <div class="flex flex-col md:flex-row gap-6 items-start">
+                 <div class="flex-1 w-full">
+                    <p class="mb-4 text-sm text-gray-600 italic">Dùng cho giám sát trạm BTS, Radar, Wi-Fi, 5G.</p>
+                    <div class="overflow-x-auto">
+                      <table class="w-full text-left border-collapse text-sm">
+                          <thead class="bg-gray-100">
+                              <tr>
+                                  <th class="p-3 border border-gray-200">Model</th>
+                                  <th class="p-3 border border-gray-200">Dải tần số</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr class="even:bg-gray-50">
+                                  <td class="p-3 border border-gray-200 font-bold text-tecoBlue">WPF3/6/8</td>
+                                  <td class="p-3 border border-gray-200">100 kHz – 3, 6, 8 GHz</td>
+                              </tr>
+                              <tr class="even:bg-gray-50">
+                                  <td class="p-3 border border-gray-200 font-bold text-tecoBlue">WPF18</td>
+                                  <td class="p-3 border border-gray-200">300 kHz – 18 GHz</td>
+                              </tr>
+                              <tr class="even:bg-gray-50">
+                                  <td class="p-3 border border-gray-200 font-bold text-tecoBlue">WPF40</td>
+                                  <td class="p-3 border border-gray-200">1 MHz – 40 GHz</td>
+                              </tr>
+                              <tr class="even:bg-gray-50">
+                                  <td class="p-3 border border-gray-200 font-bold text-tecoBlue">WPF60</td>
+                                  <td class="p-3 border border-gray-200">1 MHz – 60 GHz</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                 </div>
+                 <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image007.jpg" alt="High Frequency Probes" class="w-32 object-contain mx-auto md:mx-0" />
+              </div>
+            </div>
+          </details>
+
+          <!-- Accordion Item 2 -->
+          <details class="group border border-gray-200 rounded-lg mb-4 overflow-hidden">
+            <summary class="w-full flex justify-between items-center p-4 text-left cursor-pointer bg-gray-50 hover:bg-gray-100 group-open:bg-tecoBlue group-open:text-white transition-colors">
+              <span class="font-bold text-lg">2. Đầu đo Băng tần di động (Mobile Bands)</span>
+              <span class="transform transition-transform group-open:rotate-180">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </span>
+            </summary>
+            <div class="p-6 bg-white animate-fade-in">
+              <div class="flex flex-col md:flex-row gap-6 items-center">
+                 <div class="flex-1 w-full">
+                    <p class="mb-3 text-sm text-gray-600"><strong>Đầu đo 3-Band và 4-Band</strong> chuyên dụng cho các nhà mạng di động.</p>
+                    <ul class="list-disc pl-5 text-sm space-y-2 text-gray-700">
+                        <li><strong>GSM, UMTS, LTE:</strong> Băng tần di động (Trường E)</li>
+                        <li>Khả năng loại bỏ ảnh hưởng từ các nguồn phát sóng khác ngoài băng tần quan tâm, giúp đánh giá chính xác đóng góp của trạm phát cụ thể.</li>
+                    </ul>
+                 </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- Accordion Item 3 -->
+          <details class="group border border-gray-200 rounded-lg mb-4 overflow-hidden">
+            <summary class="w-full flex justify-between items-center p-4 text-left cursor-pointer bg-gray-50 hover:bg-gray-100 group-open:bg-tecoBlue group-open:text-white transition-colors">
+              <span class="font-bold text-lg">3. Đầu đo Tần số thấp (Low Frequency)</span>
+              <span class="transform transition-transform group-open:rotate-180">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </span>
+            </summary>
+            <div class="p-6 bg-white animate-fade-in">
+               <div class="flex flex-col md:flex-row gap-6 items-start">
+                 <div class="flex-1 w-full">
+                    <p class="mb-3 text-sm text-gray-600 italic">Dùng cho giám sát đường dây tải điện cao thế, trạm biến áp.</p>
+                    <div class="overflow-x-auto">
+                      <table class="w-full text-left border-collapse text-sm">
+                          <thead class="bg-gray-100">
+                              <tr>
+                                  <th class="p-3 border border-gray-200">Model</th>
+                                  <th class="p-3 border border-gray-200">Dải tần số</th>
+                                  <th class="p-3 border border-gray-200">Loại trường</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td class="p-3 border border-gray-200 font-bold text-tecoBlue">WP50</td>
+                                  <td class="p-3 border border-gray-200">10 Hz – 3 kHz</td>
+                                  <td class="p-3 border border-gray-200">Trường E & H</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                 </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- CASE STUDIES SECTION -->
+      <section class="mb-16">
+        <div class="mb-8 border-l-4 border-tecoOrange pl-4">
+          <h2 class="text-2xl md:text-3xl font-bold text-tecoBlue uppercase tracking-wide">Dự Án Tiêu Biểu</h2>
+          <p class="text-gray-500 mt-1 font-medium">MonitEM trên toàn thế giới</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Case 1 -->
+          <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg transition-shadow overflow-hidden flex flex-col group">
+            <div class="h-48 overflow-hidden relative">
+                <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image013.jpg" alt="FIFA World Cup 2022" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                <span class="absolute bottom-0 left-0 bg-tecoBlue text-white text-xs px-3 py-1 font-bold">Qatar</span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+                <h4 class="font-bold text-lg text-gray-800 mb-2">FIFA World Cup 2022</h4>
+                <p class="text-sm text-gray-600 mb-4 flex-1">Bộ Đô thị và Môi trường (MME) giám sát an toàn bức xạ liên tục trong suốt giải đấu bằng hệ thống MonitEM.</p>
+                <div class="border-t border-gray-100 pt-3">
+                    <p class="text-xs font-bold text-tecoOrange mb-1">Quy mô:</p>
+                    <ul class="text-xs text-gray-500 space-y-1">
+                        <li>• 40 trạm MonitEM cố định</li>
+                        <li>• Xe đo cơ động MapEM</li>
+                        <li>• 20 thiết bị cầm tay SMP2</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+
+          <!-- Case 2 -->
+          <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg transition-shadow overflow-hidden flex flex-col group">
+            <div class="h-48 overflow-hidden relative">
+                <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image017.jpg" alt="Olympics & World Cup" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                <span class="absolute bottom-0 left-0 bg-tecoBlue text-white text-xs px-3 py-1 font-bold">Brazil</span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+                <h4 class="font-bold text-lg text-gray-800 mb-2">Olympics & World Cup</h4>
+                <p class="text-sm text-gray-600 mb-4 flex-1">Cơ quan Anatel tăng gấp đôi năng lực đánh giá EMF phục vụ các sự kiện thể thao toàn cầu.</p>
+                <div class="border-t border-gray-100 pt-3">
+                    <p class="text-xs font-bold text-tecoOrange mb-1">Điểm nổi bật:</p>
+                    <ul class="text-xs text-gray-500 space-y-1">
+                        <li>• 66 trạm MonitEM + MapEM</li>
+                        <li>• Website công khai dữ liệu</li>
+                        <li>• Giám sát sân vận động</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+
+          <!-- Case 3 -->
+          <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg transition-shadow overflow-hidden flex flex-col group">
+            <div class="h-48 overflow-hidden relative">
+                <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image012.jpg" alt="Tunisia 5G" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                <span class="absolute bottom-0 left-0 bg-tecoBlue text-white text-xs px-3 py-1 font-bold">Tunisia</span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+                <h4 class="font-bold text-lg text-gray-800 mb-2">Giám sát 5G Quốc gia</h4>
+                <p class="text-sm text-gray-600 mb-4 flex-1">Cơ quan ANF kiểm soát mức EMF từ các trạm 5G mới và minh bạch thông tin với người dân.</p>
+                <div class="border-t border-gray-100 pt-3">
+                    <p class="text-xs font-bold text-tecoOrange mb-1">Tính năng:</p>
+                    <ul class="text-xs text-gray-500 space-y-1">
+                        <li>• 16 trạm MonitEM</li>
+                        <li>• Minh bạch thông tin công cộng</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          
+           <!-- Case 4 -->
+           <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg transition-shadow overflow-hidden flex flex-col group">
+            <div class="h-48 overflow-hidden relative">
+                <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image015.jpg" alt="Serbia RATEL" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                <span class="absolute bottom-0 left-0 bg-tecoBlue text-white text-xs px-3 py-1 font-bold">Serbia</span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+                <h4 class="font-bold text-lg text-gray-800 mb-2">Mạng lưới RATEL</h4>
+                <p class="text-sm text-gray-600 mb-4 flex-1">Hệ thống cảm biến MonitEM hoạt động liên tục từ năm 2016 trên toàn lãnh thổ.</p>
+                <div class="border-t border-gray-100 pt-3">
+                    <p class="text-xs font-bold text-tecoOrange mb-1">Hiệu quả:</p>
+                    <ul class="text-xs text-gray-500 space-y-1">
+                        <li>• 30 trạm MonitEM</li>
+                        <li>• Hoạt động bền bỉ >5 năm</li>
+                        <li>• Cảnh báo tự động</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-8 flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
+          <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image021.png" alt="Colombia Map" class="h-32 w-auto rounded border border-gray-200" />
+          <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image023.jpg" alt="Turkey Map" class="h-32 w-auto rounded border border-gray-200" />
+          <img src="https://raw.githubusercontent.com/tuyenpv161/MonitEM/img/Gia%CC%89i%20pha%CC%81p%20gia%CC%81m%20sa%CC%81t%20khu%20vu%CC%9B%CC%A3c%20lie%CC%82n%20tu%CC%A3c%20MonitEM.fld/image005.jpg" alt="MonitEM Unit" class="h-32 w-auto rounded border border-gray-200" />
+        </div>
+      </section>
+
+      <!-- CTA FOOTER -->
+      <div class="bg-gradient-to-br from-tecoBlue to-blue-800 rounded-xl p-8 text-white text-center shadow-xl transform transition-transform hover:-translate-y-1 duration-300">
+        <h3 class="text-2xl font-bold mb-4">Tư Vấn Giải Pháp Giám Sát EMF</h3>
+        <p class="mb-8 text-blue-100 max-w-2xl mx-auto">
+          TECOTEC Group cung cấp dịch vụ trọn gói từ khảo sát, lắp đặt đến bảo trì hệ thống Wavecontrol MonitEM. Liên hệ ngay để nhận báo giá chi tiết.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+           <a href="tel:+842437549777" class="px-6 py-3 bg-tecoOrange hover:bg-orange-600 text-white font-bold rounded shadow transition-colors border border-transparent">
+              Hotline: +84 24 3754 9777
+           </a>
+           <a href="mailto:contact@tecotec.com.vn" class="px-6 py-3 bg-white text-tecoBlue hover:bg-gray-100 font-bold rounded shadow transition-colors border border-white">
+              Gửi Email Yêu Cầu
+           </a>
+        </div>
+        <div class="mt-8 border-t border-blue-400/30 pt-6">
+           <p class="text-sm text-blue-200 font-semibold">CÔNG TY CỔ PHẦN TECOTEC GROUP</p>
+           <p class="text-xs text-blue-300 mt-1">
+             Địa chỉ: Tầng 2, Toà nhà CT3A, KĐT Mễ Trì Thượng, Nam Từ Liêm, Hà Nội
+           </p>
+        </div>
+      </div>
+
+    </article>
+    
+    <!-- Scripts -->
+    <script>
+      // Simple Accordion Logic (Optional enhancement for native details)
+      // This ensures when one detail opens, others close, mimicking an accordion
+      document.addEventListener("DOMContentLoaded", () => {
+        const details = document.querySelectorAll("details");
+        details.forEach((targetDetail) => {
+          targetDetail.addEventListener("click", () => {
+            // If we are clicking to open (attribute not yet set when click fires, but browser handles toggle)
+            // Actually, click event happens before toggle.
+            // Safer to listen to 'toggle' event, but 'toggle' doesn't bubble. 
+            // Simple click handler:
+            if (!targetDetail.hasAttribute("open")) {
+              details.forEach((detail) => {
+                if (detail !== targetDetail) {
+                  detail.removeAttribute("open");
+                }
+              });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

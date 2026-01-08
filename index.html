@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giải Pháp Giám Sát EMF MonitEM - TECOTEC Group</title>
     <meta name="description" content="Giải pháp giám sát liên tục trường điện từ MonitEM - Wavecontrol. Phân phối bởi TECOTEC Group.">
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
     <script>
       tailwind.config = {
         theme: {
@@ -32,21 +36,30 @@
         }
       }
     </script>
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Minimal Custom Styles for details/summary marker reset -->
     <style>
       body {
         font-family: 'Inter', sans-serif;
         background-color: #ffffff;
       }
-      /* Remove default details marker */
+      /* Remove default details marker to use custom icons */
       details > summary {
         list-style: none;
       }
       details > summary::-webkit-details-marker {
         display: none;
       }
-      .scroll-mt-24 {
-        scroll-margin-top: 6rem;
+      /* Hide scrollbar for horizontal scrolling areas */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
       }
     </style>
   <script type="importmap">
@@ -236,7 +249,7 @@
           
           <!-- Accordion Item 1 -->
           <details open class="group border border-gray-200 rounded-lg mb-4 overflow-hidden">
-            <summary class="w-full flex justify-between items-center p-4 text-left cursor-pointer bg-gray-50 hover:bg-gray-100 group-open:bg-tecoBlue group-open:text-white transition-colors">
+            <summary class="w-full flex justify-between items-center p-4 text-left cursor-pointer bg-gray-50 hover:bg-gray-100 group-open:bg-tecoBlue group-open:text-white transition-colors select-none">
               <span class="font-bold text-lg">1. Đầu đo Tần số cao (High Frequency)</span>
               <span class="transform transition-transform group-open:rotate-180">
                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
@@ -282,7 +295,7 @@
 
           <!-- Accordion Item 2 -->
           <details class="group border border-gray-200 rounded-lg mb-4 overflow-hidden">
-            <summary class="w-full flex justify-between items-center p-4 text-left cursor-pointer bg-gray-50 hover:bg-gray-100 group-open:bg-tecoBlue group-open:text-white transition-colors">
+            <summary class="w-full flex justify-between items-center p-4 text-left cursor-pointer bg-gray-50 hover:bg-gray-100 group-open:bg-tecoBlue group-open:text-white transition-colors select-none">
               <span class="font-bold text-lg">2. Đầu đo Băng tần di động (Mobile Bands)</span>
               <span class="transform transition-transform group-open:rotate-180">
                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
@@ -303,7 +316,7 @@
 
           <!-- Accordion Item 3 -->
           <details class="group border border-gray-200 rounded-lg mb-4 overflow-hidden">
-            <summary class="w-full flex justify-between items-center p-4 text-left cursor-pointer bg-gray-50 hover:bg-gray-100 group-open:bg-tecoBlue group-open:text-white transition-colors">
+            <summary class="w-full flex justify-between items-center p-4 text-left cursor-pointer bg-gray-50 hover:bg-gray-100 group-open:bg-tecoBlue group-open:text-white transition-colors select-none">
               <span class="font-bold text-lg">3. Đầu đo Tần số thấp (Low Frequency)</span>
               <span class="transform transition-transform group-open:rotate-180">
                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
